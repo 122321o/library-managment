@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
-    <el-button type="primary">按钮</el-button>
-  </div>
+
 </template>
 
 <script>
 
+import request from "@/utils/request";
+
 export default {
-  name: 'HomeView',
+  name: 'HomeView'
 }
 </script>
