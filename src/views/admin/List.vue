@@ -2,7 +2,7 @@
   <div>
     <!--搜索表单-->
     <div style="margin-bottom: 20px">
-      <el-input style="width:240px" placeholder="请输入名称" v-model="param.name"></el-input>
+      <el-input style="width:240px" placeholder="请输入名称" v-model="param.username"></el-input>
       <el-input style="width:240px; margin-left: 5px" placeholder="请输入联系方式" v-model="param.phone"></el-input>
       <el-input style="width:240px; margin-left: 5px" placeholder="请输入邮箱" v-model="param.email"></el-input>
       <el-button style="margin-left: 5px" type="primary" @click="load"><i class="el-icon-search"></i>搜索</el-button>
@@ -56,7 +56,7 @@ export default {
       tableData: [],
       total: 0,
       param:{
-        name:'',
+        username:'',
         phone:'',
         email:'',
         pageNum: 1,
@@ -80,7 +80,8 @@ export default {
     },
     reset() {
       this.param.phone = ''
-      this.param.name = ''
+      this.param.username = ''
+      this.param.email =''
       this.load()
     },
     //触发分页

@@ -3,7 +3,7 @@
     <div style="margin-bottom: 30px">新增用户</div>
     <el-form :inline="true" :model="form" label-width="100px">
       <el-form-item label="卡号">
-        <el-input v-model="form.username" disabled></el-input>
+        <el-input v-model="form.username" placeholder="请输入姓名"></el-input>
       </el-form-item>
       <el-form-item label="联系方式">
         <el-input v-model="form.phone" placeholder="请输入联系方式"></el-input>
