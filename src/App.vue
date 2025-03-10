@@ -18,6 +18,14 @@
           <el-submenu index="/">
             <template slot="title">
               <i class="el-icon-question"></i>
+              <span>管理员管理</span>
+            </template>
+            <el-menu-item index="/addAdmin">管理员添加</el-menu-item>
+            <el-menu-item index="/admin">管理员列表</el-menu-item>
+          </el-submenu>
+          <el-submenu index="/">
+            <template slot="title">
+              <i class="el-icon-question"></i>
               <span>会员管理</span>
             </template>
             <el-menu-item index="/addUser">会员添加</el-menu-item>

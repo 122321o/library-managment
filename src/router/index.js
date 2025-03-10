@@ -10,20 +10,37 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+    //user
   {
     path: '/user',
-    name: 'User',
-    component: () => import('@/views/user/User.vue')
+    name: 'List',
+    component: () => import('@/views/user/List.vue')
   },
   {
     path: '/addUser',
-    name: 'AddUser',
-    component: () => import('@/views/user/addUser.vue')
+    name: 'Add',
+    component: () => import('@/views/user/Add.vue')
   },
   {
     path: '/editUser',
-    name: 'EditUser',
-    component: () => import('@/views/user/EditUser.vue')
+    name: 'Edit',
+    component: () => import('@/views/user/Edit.vue')
+  },
+    //admin
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('@/views/admin/List.vue')
+  },
+  {
+    path: '/addAdmin',
+    name: 'AddAdmin',
+    component: () => import('@/views/admin/Add.vue')
+  },
+  {
+    path: '/editAdmin',
+    name: 'EditAdmin',
+    component: () => import('@/views/admin/Edit.vue')
   }
 
 ]
